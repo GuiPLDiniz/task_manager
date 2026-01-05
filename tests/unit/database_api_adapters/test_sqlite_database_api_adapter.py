@@ -6,7 +6,7 @@ from data_access_layer.database_api_adapters.sqlite_database_api_adapter import 
 
 class TestSQLiteDatabaseAPIAdapter:
 
-    def test_filename(self):
+    def test_filename(self) -> None:
         
         # String
         SQLiteDatabaseAPIAdapter("database.db")

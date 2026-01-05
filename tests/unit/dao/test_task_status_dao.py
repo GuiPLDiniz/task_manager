@@ -7,7 +7,7 @@ from entities.task_status import TaskStatus
 
 class TestTaskStatusDAO:
 
-    def test_list_all(self):
+    def test_list_all(self) -> None:
 
         fake_db_api_adapter = Mock()
 
@@ -54,7 +54,7 @@ class TestTaskStatusDAO:
             assert task_status.id == expected_value.id
             assert task_status.name == expected_value.name
     
-    def test_list_all_empty(self):
+    def test_list_all_empty(self) -> None:
 
         fake_db_api_adapter = Mock()
 
@@ -81,7 +81,7 @@ class TestTaskStatusDAO:
 
         assert tasks_status == expected_value
     
-    def test_get_by_name(self):
+    def test_get_by_name(self) -> None:
 
         fake_db_api_adapter = Mock()
 
@@ -122,7 +122,7 @@ class TestTaskStatusDAO:
 
         assert task_status.name == expected_value.name
     
-    def test_get_by_name_empty(self):
+    def test_get_by_name_empty(self) -> None:
 
         fake_db_api_adapter = Mock()
 
